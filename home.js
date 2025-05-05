@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const nav = document.querySelector('.elementor-element-3f1540f');
+    const nav = document.querySelector('.elementor-element-f9fec07');
     let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
 
-        if (currentScroll > 100) { // Show scrolled nav after 100px scroll
+        if (currentScroll > 100) {
             nav.classList.add('nav-scrolled');
             nav.classList.remove('nav-original');
         } else {
