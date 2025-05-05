@@ -1,0 +1,73 @@
+/*
+Theme Name: Hello Elementor Child
+Template: hello-elementor
+Author: Tuchie
+Version: 1.0.0
+*/
+/* Default navigation styles */
+.elementor-element-3f1540f {
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+/* Scrolled navigation styles */
+.nav-scrolled {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 0px 20px;
+    z-index: 1000;
+    animation: fadeDown 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+.elementor-94 .elementor-element.elementor-element-cb26a4d .elementskit-menu-container {
+    height: 70px !important;
+}
+/* Original state when scrolling up */
+.nav-original {
+    position: relative;
+    width: 100%;
+    transform: none;
+    left: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+/* Float animation keyframes */
+@keyframes fadeFromTop {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+/* Updated animation for fade down effect */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
