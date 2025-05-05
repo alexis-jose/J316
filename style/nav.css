@@ -12,11 +12,10 @@ Version: 1.0.0
 /* Scrolled navigation styles */
 .nav-scrolled {
     position: fixed;
-    top: 20px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
-    max-width: 1200px;
+    width: 60%;
     background-color: white;
     border-radius: 50px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
